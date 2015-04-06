@@ -1,0 +1,15 @@
+colorscheme morning
+set smarttab
+set autoindent smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+filetype on
+filetype indent on
+filetype plugin on
+set shell=bash
+set hlsearch
+set showmatch
+set ttyfast
+set scrolloff=5
+set nu
