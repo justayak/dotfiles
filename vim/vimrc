@@ -1,3 +1,12 @@
+set nocompatible
+syntax on
+
+set spell spelllang=en_us
+set showcmd
+set modeline
+
+set mouse=a
+
 colorscheme morning
 set smarttab
 set autoindent smartindent
