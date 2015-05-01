@@ -7,7 +7,6 @@ set modeline
 
 set mouse=a
 
-colorscheme morning
 set smarttab
 set autoindent smartindent
 set tabstop=4
