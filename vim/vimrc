@@ -1,7 +1,15 @@
 set nocompatible
 syntax on
 
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
 set spell spelllang=en_us
+set nospell
 set showcmd
 set modeline
 
@@ -21,3 +29,15 @@ set showmatch
 set ttyfast
 set scrolloff=5
 set nu
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
+match OverLength /\%81v.\+/
+
+hi clear SpellBad
+hi SpellBad cterm=underline,bold ctermbg=red
+
+hi clear SpellRare
+hi SpellLocal cterm=underline,bold ctermbg=darkblue
+
+hi clear SpellLocal
+hi SpellLocal cterm=underline,bold ctermbg=darkgreen
