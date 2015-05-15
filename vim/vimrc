@@ -41,3 +41,5 @@ hi SpellLocal cterm=underline,bold ctermbg=darkblue
 
 hi clear SpellLocal
 hi SpellLocal cterm=underline,bold ctermbg=darkgreen
+
+hi MatchParen cterm=underline,bold ctermbg=magenta
