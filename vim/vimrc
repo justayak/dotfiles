@@ -1,12 +1,12 @@
 set nocompatible
 syntax on
 
-filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'rust-lang/rust.vim'
 
 set spell spelllang=en_us
 set nospell
@@ -21,6 +21,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 filetype on
+au BufNewFile,BufRead *.rs set filetype=rust
 filetype indent on
 filetype plugin on
 set shell=bash
