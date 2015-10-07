@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set nocompatible
 syntax on
 
@@ -46,3 +47,5 @@ hi clear SpellLocal
 hi SpellLocal cterm=underline,bold ctermbg=darkgreen
 
 hi MatchParen cterm=underline,bold ctermbg=magenta
+
+map <C-n> :NERDTreeToggle<CR>
