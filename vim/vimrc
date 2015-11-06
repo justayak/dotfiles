@@ -14,6 +14,8 @@ set nospell
 set showcmd
 set modeline
 
+colorscheme morning
+
 set mouse=a
 
 set smarttab
