@@ -1,20 +1,26 @@
-execute pathogen#infect()
 set nocompatible
-syntax on
-
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'rust-lang/rust.vim'
+Plugin 'VundleVim/Vundle.vim'
 
-set spell spelllang=en_us
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
+
+" we need to install => :PluginInstall
+
+filetype plugin indent on
+syntax on
+
 set nospell
 set showcmd
 set modeline
-
-colorscheme morning
 
 set mouse=a
 
@@ -23,31 +29,9 @@ set autoindent smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-filetype on
-au BufNewFile,BufRead *.rs set filetype=rust
-filetype indent on
-filetype plugin on
-set shell=bash
-set hlsearch
-set showmatch
-set ttyfast
-set scrolloff=5
-set nu
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
-match OverLength /\%81v.\+/
-
-hi clear SpellBad
-hi SpellBad cterm=underline,bold ctermbg=red
-
-hi clear SpellRare
-hi SpellLocal cterm=underline,bold ctermbg=darkblue
-
-hi clear SpellLocal
-hi SpellLocal cterm=underline,bold ctermbg=darkgreen
-
-hi MatchParen cterm=underline,bold ctermbg=magenta
-
 map <C-n> :NERDTreeToggle<CR>
+
+filetype on
